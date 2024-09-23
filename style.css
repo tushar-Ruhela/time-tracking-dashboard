@@ -1,0 +1,242 @@
+body{
+    background-color:hsl(226, 43%, 10%);
+    font-size: 18px;
+    font-family: Robik;
+
+}
+.grid-dashboard{
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-columns:repeat(4,30%) ;
+    grid-template-rows: repeat(2,135px);
+    gap: 10px;
+    color: white;
+    margin: auto;
+    margin-top: 150px;
+}
+.about{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    font-size: 10px;
+    
+}
+.name > h2:nth-child(2) {
+    margin-top: 0px;
+
+    }
+
+p{
+    padding-left: 10px;
+}
+
+.report{
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    background-color:hsl(246, 80%, 60%);
+    border-radius: 10px;
+}
+h2{
+    font-weight: 100;
+}
+
+.name{
+    width: 60px;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 10px;
+font-weight: 100;
+}
+span{
+    font-size: 10px;
+}
+
+#image{
+    background-image: url(images/image-jeremy.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    height: 50px;
+    width: 50px;
+    margin-left:10px;
+    margin-bottom: -20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.data{
+    height: 100px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    margin-top: 26px;
+    padding: 5px;
+    
+    
+}
+.data:hover{
+    background-color:hsl(237, 36%, 30%);
+    cursor: pointer;
+}
+
+.head{
+
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.ellpsis{
+    color:white;
+margin-bottom: 22px;
+    font-size: 16px;
+}
+.ellpsis:hover{
+    color: rgb(179, 165, 165);
+    
+}
+.current{
+    font-size: 38px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 100;
+
+}
+
+.previous{
+ font-size: 10px;
+ margin-left: 18px;
+ margin-top:-35px;
+ font-weight: 100;
+}
+.grid-item2{
+   
+background-image: url(images/icon-work.svg);
+background-position-x:right;
+background-size: 50px;
+background-repeat: no-repeat;
+background-color: hsl(15, 100%, 70%);
+border-radius: 10px;
+
+}
+.grid-item3{
+    background-image: url(images/icon-play.svg);
+    background-position-x:right;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color:  hsl(195, 74%, 62%);
+    border-radius: 10px;
+}
+.grid-item4{
+    background-image: url(images/icon-study.svg);
+    background-position-x:right;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px;
+}
+.grid-item5{
+    background-image: url(images/icon-exercise.svg);
+    background-position-x:right;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px;
+}
+.grid-item6{
+    background-image: url(images/icon-social.svg);
+    background-position-x:right;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10px;
+}
+.grid-item7{
+    background-image: url(images/icon-self-care.svg);
+    background-position-x:right;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10px;
+}
+@font-face {
+    font-family: Robik;
+    src: url(fonts/static/Rubik-Light.ttf);
+}
+
+@media screen and (max-width:480px) {
+    .grid-dashboard{
+        width: 200px;
+        grid-template-columns:200px;
+        grid-template-rows: repeat(7,80px);
+        row-gap: 20px;
+        margin: auto;
+    
+    }
+    .about{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+    margin-top: 60px;
+        
+    }
+    h2{
+        font-size: 14px;
+        font-weight: 100;
+    }
+    #image{
+      
+        background-size: 40px;
+        height: 40px;
+        width: 40px;
+        margin-left:-20px;
+        margin-bottom: -5px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+   
+    .report{
+        height: 80px;
+        width: 200px;
+        display: flex;
+        flex-direction:row;
+        align-items:center;
+    }
+    .days{
+display: flex;
+justify-content: space-evenly;
+font-size: 11px;
+    }
+   .current{
+    font-size: 18px;
+   }
+.previous{
+    margin-top: 10px;
+    font-size: 10px;
+}
+ 
+   .time{
+    display: flex;
+    justify-content: space-between;
+   }
+    .data{
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .head{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 13px;
+    }
+
+    
+    
+}
